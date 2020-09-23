@@ -1,7 +1,6 @@
 body{
     background-color:white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+    }
 #index-main{
     max-width: 800px;
     margin: 0 auto;
@@ -11,15 +10,17 @@ header, footer {
     color: black;
     padding: 8px;
     border-radius: 16px;
+}
+header{
     font-family: 'Raleway', sans-serif;
 }
 header h1{
     font-size: 32px;
     padding-left: 95px;
-    font-family: 'Raleway', sans-serif;
 }
 main {
     padding-left: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 main h2{
     border-bottom: 1px solid black ;
@@ -38,6 +39,7 @@ footer a:hover{
 footer{
     clear:both;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 footer p.legal{
     margin-bottom: 9px;
