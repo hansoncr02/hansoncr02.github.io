@@ -1,0 +1,34 @@
+.blue {
+    color: #3ea9f0;
+    
+}
+button {
+    background-color: grey;
+    color: white;
+    padding: .5em;
+    box-shadow: black;
+}
+.big {
+    font-size: 3em;
+}
+div {
+    background-color: white;
+    padding: 1em;
+}
+#personal, #business, #enterprise {
+    text-align: center;
+    float: left;
+    margin: 0 15;
+}
+body {
+    color: grey;
+    background-color: grey;
+}
+.banner{
+    background-color: #3ea9f0;
+    padding: 1em;
+    color: white;
+}
+button .yellow {
+    background-color: yellow;
+}
