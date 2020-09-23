@@ -12,12 +12,10 @@ header, footer {
     padding: 8px;
     border-radius: 16px;
 }
-h1 {
-    font-family: 'Raleway', sans-serif;
-}
 header h1{
     font-size: 32px;
     padding-left: 95px;
+    font-family: 'Raleway', sans-serif;
 }
 main {
     padding-left: 15px;
