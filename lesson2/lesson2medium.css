@@ -1,0 +1,14 @@
+@media only and screen (min-width: 37.5em){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+
+
+
+}
