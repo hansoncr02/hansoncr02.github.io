@@ -1,13 +1,12 @@
 body{
     background-color:white;
     max-width: 800px;
-    padding-left: 25%;
-    padding-right: 25%;
+    margin: auto;
     }
 
 #index-main{
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
 }
 header, footer {
     background-color: #58eb34;
