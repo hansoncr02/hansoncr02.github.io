@@ -1,21 +1,28 @@
 body{
     background-color:white;
+    max-width: 800px;
+    padding-left: 25%;
+    padding-right: 25%;
     }
+
 #index-main{
     max-width: 800px;
     margin: 0 auto;
 }
 header, footer {
-    background-color: green;
+    background-color: #58eb34;
     color: black;
     padding: 8px;
     border-radius: 0px;
 }
+p{
+    font-family: 'Montserrat', sans-serif;
+}
 header{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 header h1{
-    font-size: 32px;
+    font-size: 30px;
     padding-left: 95px;
 }
 main {
@@ -44,7 +51,8 @@ footer p.legal{
     font-size: .9em;
 }
 footer p.highlight{
-    color: yellow;
+    color: #7a7231;
     margin-top: 9px;
     font-size: .7em;
+    
 }
