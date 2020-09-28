@@ -32,6 +32,7 @@ img{
     padding-top: 10px;
     
 }
+/* direct children will be the only ones affected by display: grid;  NO GRANDCHILDREN!!*/
 main {
     display: grid;
     grid-template-columns: 1fr;
