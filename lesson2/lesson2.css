@@ -47,6 +47,9 @@ div h3 {
 footer a {
     color: white;
 }
+footer a:hover{
+    color: grey;
+}
 h3{
     color: white;
 }
