@@ -9,8 +9,8 @@ body{
     margin: auto;
 }
 header, footer {
-    background-color: #58eb34;
-    color: black;
+    background-color: #0f4102;
+    color: white;
     padding: 8px;
     border-radius: 0px;
 }
@@ -35,7 +35,7 @@ main h2{
     width: 200px;
 }
 footer a, footer a:link, footer a:visited,  footer a:active, footer a:focus{
-    color: black;
+    color: white;
 }
 footer a:hover{
     color: grey;

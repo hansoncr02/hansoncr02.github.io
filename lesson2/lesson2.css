@@ -2,8 +2,8 @@ h1,h2 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 header, footer {
-    background-color: #58eb34;
-    color: black;
+    background-color: #0f4102;
+    color: white;
     padding: 8px;
     border-radius: 10px;
     text-align: center;
@@ -38,9 +38,15 @@ main {
     grid-template-columns: 1fr;
 }
 div h3 {
-    background-color: #58eb34;
+    background-color: #0f4102;
     margin: 0;
     padding: 20 20 20 5;
     border-radius: 5px;
     
+}
+footer a {
+    color: white;
+}
+h3{
+    color: white;
 }
