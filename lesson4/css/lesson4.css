@@ -1,0 +1,98 @@
+body{
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #c4f0ff;
+}
+p{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+.navigation {
+    list-style: none;
+    margin-top: 0px;
+}
+header, header p{
+    margin-bottom: 0px;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+.navigation li:first-child {
+    display: block;
+    text-align: center;
+    font-size: 1.25em;
+}
+.navigation li {
+    display: none;
+    padding: 1em;
+    text-align: center;
+}
+ul li, ul a{
+    text-decoration: none;
+    color: black;   
+}
+
+.motto {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.motto p{
+    font-size: .75em;
+}
+.motto h3 {
+    font-size: .9em;
+}
+header img {
+    height: 4em;
+}
+nav ul {
+    align-items: center;
+    
+}
+#five, nav, footer, header {
+    background-color: #d51920;
+}
+#footer{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    text-align: left;
+    
+}
+#contact {
+    text-align: left;
+}
+footer{
+    text-align: center;
+}
+.responsive li {
+    display: block;
+}
+.navigation a:hover {
+    background-color: #e88185;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 720px){
+    /**stay in the brackets**/
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: inline-flex;
+        padding: 1em;
+        text-align: right;
+    }
+
+
+
+    }
