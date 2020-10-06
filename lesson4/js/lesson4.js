@@ -7,8 +7,7 @@ window.addEventListener('load', (event)=>{
     
 } )
 
-const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation');
+function togglemenu(){
+   document.getElementById("navigation").classList.toggle("responsive");
 
-
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+}

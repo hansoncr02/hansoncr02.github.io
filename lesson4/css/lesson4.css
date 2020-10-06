@@ -21,19 +21,30 @@ header {
     display: grid;
     grid-template-columns: 1fr 8fr;
 }
-.navigation li:first-child {
-    display: block;
+#navigation li:first-child {
+    display: block !important;
     text-align: center;
     font-size: 1.25em;
 }
-.navigation li {
+#navigation li {
     display: none;
-    padding: 1em;
     text-align: center;
+}
+nav ul {
+    margin: 0;
 }
 ul li, ul a{
     text-decoration: none;
-    color: black;   
+    color: black; 
+    padding: .8rem; 
+}
+#navigation ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,0.4);
 }
 
 .motto {
@@ -70,9 +81,9 @@ footer{
     text-align: center;
 }
 .responsive li {
-    display: block;
+    display: block !important;
 }
-.navigation a:hover {
+nav ul li a:hover {
     background-color: #e88185;
 }
 
@@ -82,17 +93,22 @@ footer{
 
 
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 785px){
     /**stay in the brackets**/
-    .navigation li:first-child {
-        display: none;
+    #navigation li:first-child {
+        display: none !important;
     }
-    .navigation li {
+    #navigation li {
         display: inline-flex;
         padding: 1em;
         text-align: right;
     }
-
-
+    nav ul li a {
+        display: block;
+        border-top: none;
+    }
+    .responsive li {
+        display: inline-flex !important;
+    }
 
     }
