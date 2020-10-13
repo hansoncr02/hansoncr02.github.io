@@ -123,7 +123,7 @@ nav ul li a:hover {
 }
 #alert{
     text-align: center;
-    background-color: salmon;
+    background-color: #e88185;
     margin: 0 auto;
     padding: 5px;
 }
@@ -135,6 +135,13 @@ h6 {
 }
 #map {
     max-width: 100%;
+}
+#facebook, #twitter, #instagram, #youtube{
+    width: 50px;
+    display: none;
+}
+#active {
+    background-color: #e88185;
 }
 
 
@@ -159,6 +166,9 @@ h6 {
     }
     .responsive li {
         display: inline-flex !important;
+    }
+    #five {
+        display: block;
     }
     #fiveday {
         display: grid;
@@ -187,6 +197,9 @@ h6 {
     #rightside {
         grid-column: 2;
         grid-row: 1;
+    }
+    #facebook, #twitter, #instagram, #youtube{
+        display: grid;
     }
     }
 
