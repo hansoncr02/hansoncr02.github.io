@@ -126,12 +126,13 @@ nav ul li a:hover {
     background-color: #e88185;
     margin: 0 auto;
     padding: 5px;
+    display: none;
 }
 h6 {
     margin: 0 auto;
 }
 .hide{
-    display: none;
+    display: block !important;
 }
 #map {
     max-width: 100%;
