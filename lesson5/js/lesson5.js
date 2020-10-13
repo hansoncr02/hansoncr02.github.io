@@ -1,4 +1,12 @@
 window.addEventListener('load', (event)=>{
+    var d = new Date();
+    var n = d.getDay();
+    if (n=6) {
+        document.getElementById("alert").classList.add("hide")
+    } 
+    else {
+        document.getElementById("alert").classList.remove("hide")
+    }
     const lu = document.querySelector('#lastupdated');
     lu.textContent=document.lastModified;
 
