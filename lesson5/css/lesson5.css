@@ -118,8 +118,11 @@ nav ul li a:hover {
 }
 #articlephoto { 
     float: right;
-    max-height: 300px;
+    max-width: 100%;
     
+}
+.clear {
+    clear: both;
 }
 #alert{
     text-align: center;
@@ -178,12 +181,11 @@ h6 {
     }
     #article {
         text-align: left;
-        max-height: 100%;
+
         
     }
     #articlephoto { 
         float: right;
-        max-height: 100%;
         
     }
     #mapgrid {
