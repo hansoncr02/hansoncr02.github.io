@@ -55,3 +55,10 @@ footer p.highlight{
     font-size: .7em;
     
 }
+#banner {
+    background-color: teal;
+    color: white;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
