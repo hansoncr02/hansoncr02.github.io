@@ -96,7 +96,7 @@ nav ul li a:hover {
 #summary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10px 1fr 1fr 1fr ;
+    grid-template-rows: 10px 1fr ;
     max-height: 562px;
 }
 #summary div {
@@ -153,7 +153,15 @@ h6 {
 
 
 
+@media only screen and (min-width: 630px){
+    #summary {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10px 1fr 1fr ;
+        max-height: 562px;
+    }
 
+}
 @media only screen and (min-width: 785px){
     /**stay in the brackets**/
     #navigation li:first-child {
@@ -204,6 +212,7 @@ h6 {
     #facebook, #twitter, #instagram, #youtube{
         display: grid;
     }
+    
     }
 
     @media only screen and (min-width: 1000px){
@@ -211,6 +220,11 @@ h6 {
         body {
             max-width: 1000px;
         }
-        
+        #summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 10px 1fr 1fr 1fr ;
+            max-height: 562px;
+        }
 
     }

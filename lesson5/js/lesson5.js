@@ -2,12 +2,9 @@ window.addEventListener('load', (event)=>{
     var d = new Date();
     var n = d.getDay();
     console.log(n);
-    if (n==6) {
-        document.getElementById("alert").classList.add("hide");
+    if (n==5) {
+        document.getElementById("alert").classList.toggle("hide");
     } 
-    else {
-        document.getElementById("alert").classList.remove("hide");
-    };
     const lu = document.querySelector('#lastupdated');
     lu.textContent=document.lastModified;
 
