@@ -113,10 +113,10 @@ nav ul li a:hover {
 
     }
 
-    @media only screen and (min-width: 1000px){
+    @media only screen and (min-width: 1200px){
         /**stay in the brackets**/
         body {
-            max-width: 1000px;
+            max-width: 100%;
         }
     
         }
