@@ -1,7 +1,11 @@
-body{
+#mainsection{
     margin: 0 auto;
     max-width: 800px;
     background-color: #c4f0ff;
+}
+body{
+    background-color: #c4f0ff;
+    margin: 0 auto;
 }
 p{
     font-family: 'Montserrat', sans-serif; 
@@ -217,8 +221,13 @@ h6 {
 
     @media only screen and (min-width: 1000px){
         /**stay in the brackets**/
-        body {
-            max-width: 1000px;
+        #mainsection {
+            max-width: 800px;
+        }
+        nav footer {
+            max-width: 100%;
+        }
+    
         }
         #summary {
             display: grid;

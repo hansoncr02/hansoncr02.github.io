@@ -1,10 +1,14 @@
-body{
+#mainsection{
     margin: 0 auto;
     max-width: 800px;
     background-color: #c4f0ff;
 }
+body{
+    background-color: #c4f0ff;
+    margin: 0 auto;
+}
 p{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -115,7 +119,10 @@ nav ul li a:hover {
 
     @media only screen and (min-width: 1200px){
         /**stay in the brackets**/
-        body {
+        #mainsection {
+            max-width: 1200px;
+        }
+        nav footer {
             max-width: 100%;
         }
     
