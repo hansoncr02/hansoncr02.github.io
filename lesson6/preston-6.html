@@ -9,6 +9,7 @@
     <link rel="stylesheet" href=https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap">
     <link rel="shortcut icon" href="favicon.ico">
     <script src="js/lesson6.js"></script>
+    <script src="js/windchill.js"></script>
 </head>
 <body>
     <section id="alert" class="">
@@ -36,13 +37,21 @@
     </nav>
     <section id="mainsection">
         <h1>Preston Idaho</h1>
-        <div id="summary">
-            <img id="hero" src="images/preston.jpg" alt="hero image">
+        <picture id="summary">
+
+            <source srcset="images/heroimage600px.jpg" media='(max-width:599px)'>
+                <source srcset="images/heroimage800px.jpg" media='(min-width:600px) and (max-width:899px)'>
+                    <source srcset="images/heroimage1000px.jpg" media='(min-width:900px)'>
+            <img id="hero" src="images/heroimageoriginal.jpeg" alt="hero image">
             <div>
                 <p>Weather Summary</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sint quaerat error, architecto non optio tempore cumque, debitis doloribus ipsa, veniam adipisci quisquam. Sunt provident eaque id repellendus a facilis.</p>
+                <p>Currently: Rainy</p>
+                <p>High:<span id='hightemp'> 54 </span>&#8457;</p>
+                <p id='windchill'></p> 
+                <p>Humidity: 95%</p>
+                <p>Windspeed:<span id='wind'> 12 </span>mph</p>
             </div>
-        </div>
+        </picture>
         <p id="five">Five Day Forecast</p>
         <div id="fiveday"> 
             <div>

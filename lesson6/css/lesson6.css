@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 #summary {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20px 1fr 1fr;
     grid-template-rows: 10px 1fr ;
     max-height: 562px;
 }
@@ -222,12 +222,10 @@ h6 {
     @media only screen and (min-width: 1000px){
         /**stay in the brackets**/
         #mainsection {
-            max-width: 800px;
+            max-width: 1000px;
         }
         nav footer {
             max-width: 100%;
-        }
-    
         }
         #summary {
             display: grid;
