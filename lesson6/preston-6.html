@@ -37,10 +37,13 @@
     </nav>
     <section id="mainsection">
         <h1>Preston Idaho</h1>
-        <picture id="summary">
-                <source srcset="images/heroimage800px.jpg" media='(min-width:600px) and (max-width:899px)'>
+        <div id="summary">
+            <picture id="hero">
+            <source srcset="images/heroimage600px.jpg" media= '(max-width:599px)'>
+                <source srcset="images/heroimage800px.jpg" media= '(min-width:600px) and (max-width:899px)'>
                     <source srcset="images/heroimage1000px.jpg" media='(min-width:900px)'>
-            <img id="hero" src="images/heroimage600.jpg" alt="hero image">
+            <img id="hero" src="images/heroimageoriginal.jpeg" alt="hero image">
+            </picture>
             <div>
                 <p>Weather Summary</p>
                 <p>Currently: Rainy</p>
@@ -49,7 +52,7 @@
                 <p>Humidity: 95%</p>
                 <p>Windspeed: <span id='wind'>12</span> mph</p>
             </div>
-        </picture>
+        </div>
         <p id="five">Five Day Forecast</p>
         <div id="fiveday"> 
             <div>
