@@ -14,9 +14,11 @@ const loadImages = (image) => {
   };
 
 if('IntersectionObserver' in window) {
+  console.log('here');
     const observer = new IntersectionObserver((items, observer) => {
       items.forEach((item) => {
         if(item.isIntersecting) {
+          console.log(item);
           loadImages(item.target);
           observer.unobserve(item.target);
         }
