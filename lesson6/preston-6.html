@@ -6,7 +6,7 @@
     <title>Preston homepage</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/lesson6.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap"> -->
     <link rel="shortcut icon" href="favicon.ico">
     <script src="js/lesson6.js"></script>
     <script src="js/windchill.js"></script>
@@ -56,24 +56,34 @@
         <p id="five">Five Day Forecast</p>
         <div id="fiveday"> 
             <div>
-                <p>first day</p>
-                <img src="#" alt="day 1">
+                <p>Monday</p>
+                <img src="images/sunny.webp" alt="day 1">
+                <p>High: 71 &#8457;</p>
+                <p>Low: 60 &#8457;</p>
             </div>
             <div>
-                <p>second day</p>
-                <img src="#" alt="day 2">
+                <p>Tuesday</p>
+                <img src="images/sunny.webp" alt="day 2">
+                <p>High: 60 &#8457;</p>
+                <p>Low: 52 &#8457;</p>
             </div>
             <div>
-                <p>third day</p>
-                <img src="#" alt="day 3">
+                <p>Wednesday</p>
+                <img src="images/sunny.webp" alt="day 3">
+                <p>High: 80 &#8457;</p>
+                <p>Low: 79 &#8457;</p>
             </div>
             <div>
-                <p>fourth day</p>
-                <img src="#" alt="day 4">
+                <p>Thursday</p>
+                <img src="images/sunny.webp" alt="day 4">
+                <p>High: 45 &#8457;</p>
+                <p>Low: 20 &#8457;</p>
             </div>
             <div>
-                <p>fifth day</p>
-                <img src="#" alt="day 5">
+                <p>Friday</p>
+                <img src="images/sunny.webp" alt="day 5">
+                <p>High: 55 &#8457;</p>
+                <p>Low: 32 &#8457;</p>
             </div>
             
         </div>
@@ -111,5 +121,14 @@
         <p class="highlight"><strong> Last updated on <span id="lastupdated"></span> </strong></p>
         <p class="today"></p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+  google: {
+    families: [
+       'Montserrat', 'Roboto Condensed'
+    ]
+  }
+});
+    </script>
 </body>
 </html>
