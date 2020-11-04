@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Page</title>
+    <title>Storm Center</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/lesson8.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap">
@@ -19,7 +19,6 @@
         </div>
     </header>
     <nav>
-        
         <ul id="navigation" class="">
             <li><a class="ham" href="#" onclick="togglemenu()"> &#9776; </a></li>
             <li> <a href="#"> Home</a></li>
@@ -30,14 +29,86 @@
             <li><a id="" href="https://hansoncr02.github.io/lesson7/gallery-7.html"> Gallery</a></li>
         </ul>
     </nav>
+
+
     <main>
-    
+        <form action="thanks.html" method="get" id="stormCenter">
+        <label for=name>
+            <p>Enter Full Name:</p>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z]" minlength="5" size="20">
+        </label>
+        <label for='email'>
+            <p>Email:</p>
+            <input type="email" id='email'  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com" maxlength="30" size="30" >
+        </label>
+        <label for='phone'>
+            <p>Phone Number(ex 111-111-1111):</p>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required size="13" maxlength="12">
+        </label>
+        <label for='Zip'>
+            <p>Zip Code:</p>
+            <input type="number" id='zip' name='zip' pattern="[0-9]{5}" required maxlength="5" size="7">
+        </label>
+        <label for='stormdate'>
+            <p>Date of Storm:</p>
+            <input type="date" id='stormdate' name="stormdate" >
+        </label>
+        <label for="stormtype">
+            <p>Type of Storm:</p>
+            <input list="stormchoice" id="stormtype" name="stormtype" />
+                <datalist id="stormchoice">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+        </label>
+        <label for="stormseverity">
+            <p>Severity of Storm:</p>
+            <input type="range" id="stormseverity" name="stormseverity" min="1" max="10" value="1">
+        </label><br>
+        <label for="stormregion">
+            <select id="stormregion" name="stormregion">
+                <option selected disabled value="default">Select Region...</option>
+                <option value="preston">Preston</option>
+                <option value="sodasprings">Soda Springs</option>
+                <option value="fishhaven">Fish Haven</option>
+            </select>
+        </label>
+        <label for="danger">
+            <p>Are you in danger:</p>
+                <div>
+                  <input type="radio" id="yes" name="danger" value="yes"
+                         checked>
+                  <label for="yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" id="maybe" name="danger" value="maybe">
+                  <label for="maybe">Maybe</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="no" name="danger" value="no">
+                  <label for="no">No</label>
+                </div>
+        </label>
+    </form>
+        <div>
+            <label for="comment">
+                <p>Additional Information or Comments (Max 294 characters):</p>
+                <textarea id="comment" name="comment" rows="7" cols="42" maxlength="294"></textarea>
+            </label><br>
+            <button type="submit" form="stormCenter" name="submit" value="Submit">Submit</button>
+        </div>
     </main>
+
+
     <footer>
         <div id="rightside">
             <h5 id="contact">Contact Information </h5>
             <div id="footer">
-                <p>&#9993</p>
+                <p>&#9993;</p>
                 <p>han19037@byui.edu</p>
                 <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.png" alt="facebook"></a>
                 <a href="https://www.youtube.com/"><img id="youtube" src="images/youtube.png" alt="youtube"></a>

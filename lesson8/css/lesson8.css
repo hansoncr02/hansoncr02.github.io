@@ -107,6 +107,22 @@ main h1{
     margin: 0 auto;
     padding-left: 28%;
 } 
+body label p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+input, select, button{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+button {
+    margin-top: 10px;
+}
+main {
+    margin-left: 10px;
+}
+
 
 @media only screen and (min-width: 630px){
     
@@ -139,7 +155,14 @@ main h1{
         margin: 0 auto;
         padding-left: 30%;
     }  
-    
+    main{
+    margin-left: 0px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
     }
 
     @media only screen and (min-width: 1060px){
@@ -155,4 +178,9 @@ main h1{
             margin: 0 auto;
             padding-left: 34%;
         }  
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
     }
