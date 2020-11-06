@@ -1,0 +1,71 @@
+.head{
+    font-family: 'Roboto', sans-serif;
+    color:gray;
+    font-style:bold;
+}
+.profile-pic img {
+    border-radius: 50%;
+    width: 50px;
+}
+td {
+    padding-right: 20px;
+}
+th {
+    text-align: left;
+    background-color: #DBE4EA;
+}
+table {
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: #F5F5F8;
+}
+.active {
+    background-color: #DDFFF1;
+    border-radius: 33%;
+    padding: 5px;
+}
+.waiting {
+    background-color: #FEF9E4;
+    border-radius: 33%;
+    padding: 5px;
+}
+.active i {
+    color: #34BF76;
+    font-size: 50%;
+}
+.waiting i {
+    color: #F3BE16;
+    font-size: 50%;
+}
+.active i:hover {
+        color: #34BF76;
+        font-size: 50%;
+}
+.waiting i:hover {
+    color: #F3BE16;
+    font-size: 50%;
+}
+td .edit i {
+    color: grey;
+    padding:5px;
+}
+td i {
+    color: grey;
+    padding: 5px;
+}
+td .edit i:hover {
+    color: blue;
+    background-color: #DBE4EA;
+    border-radius: 50%;
+    padding: 5px;
+}
+td i:hover {
+    color: red;
+    background-color: #DBE4EA;
+    border-radius: 50%;
+    padding: 5px;
+}
+tr:hover {
+    background-color: #E7F2FD;
+}
