@@ -33,7 +33,10 @@
 
     <main>
         <form action="thanks.html" method="get" id="stormCenter">
-        <label for=name>
+        <h2>
+            Personal Information
+        </h2>
+       <label for=name>
             <p>Enter Full Name:</p>
             <input type="text" id="name" name="name" required pattern="[a-z A-Z]+" minlength="5" size="20">
         </label>
@@ -49,6 +52,9 @@
             <p>Zip Code:</p>
             <input type="number" id='zip' name='zip' pattern="[0-9]{5}" required maxlength="5" size="7">
         </label>
+        <h2>
+            Storm Information
+        </h2>
         <label for='stormdate'>
             <p>Date of Storm:</p>
             <input type="date" id='stormdate' name="stormdate" >
@@ -65,7 +71,7 @@
                 </datalist>
         </label>
         <label for="stormseverity">
-            <p>Severity of Storm: <span id='ratingvalue'>0</span></p>
+            <p>Severity of Storm: <span id='ratingvalue'>1</span></p>
             <input type="range" id="stormseverity" name="stormseverity" min="1" max="10" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         </label><br>
         <label for="stormregion">
