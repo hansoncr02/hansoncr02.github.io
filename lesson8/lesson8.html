@@ -35,7 +35,7 @@
         <form action="thanks.html" method="get" id="stormCenter">
         <label for=name>
             <p>Enter Full Name:</p>
-            <input type="text" id="name" name="name" required pattern="[A-Za-z]" minlength="5" size="20">
+            <input type="text" id="name" name="name" required pattern="[a-z A-Z]+" minlength="5" size="20">
         </label>
         <label for='email'>
             <p>Email:</p>
@@ -65,8 +65,8 @@
                 </datalist>
         </label>
         <label for="stormseverity">
-            <p>Severity of Storm:</p>
-            <input type="range" id="stormseverity" name="stormseverity" min="1" max="10" value="1">
+            <p>Severity of Storm: <span id='ratingvalue'>0</span></p>
+            <input type="range" id="stormseverity" name="stormseverity" min="1" max="10" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         </label><br>
         <label for="stormregion">
             <select id="stormregion" name="stormregion">
