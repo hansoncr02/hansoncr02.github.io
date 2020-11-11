@@ -1,0 +1,33 @@
+td, th, tr {
+    font-family: 'Lato', sans-serif;
+}
+td{
+    text-align: center;
+}
+th{
+    background-color: #7d7d80;
+    color: black;
+    border: solid 1px #55565a;
+}
+table {
+    border-collapse: collapse;
+    border:solid 1px #55565a;
+}
+td {
+    border: solid 1px #55565a;
+}
+tr:nth-child(even) {
+    background-color: #89abbc;
+    color: #black;
+}
+tr:nth-child(odd) {
+    background-color: #004d71;
+    color: white;
+}
+img{
+    width: 25px;
+}
+tr:hover {
+    background-color: #55565a;
+    color: #95d600;
+}
