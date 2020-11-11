@@ -42,6 +42,8 @@ async function gettown() {
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
         let img = document.createElement('img');
+        let imgsection = document.createElement('section');
+        let smallgrid=document.createElement('section');
 
         h2.textContent = response.towns[1].name;
         h3.textContent = response['towns'][1]['motto'];
@@ -49,7 +51,7 @@ async function gettown() {
         p2.textContent = "Population: " + response['towns'][1]['currentPopulation'];
         p3.textContent = "Annual Rain Fall: " + response['towns'][1]['averageRainfall'];
         p4.textContent = "Current Events: " + response['towns'][1]["events"];
-        img.setAttribute('src', response['towns'][1]['photo']);
+        img.setAttribute('src', "images/"+response['towns'][1]['photo']);
         img.setAttribute('alt', response['towns'][1]['name']);
 
         townsection.appendChild(h2);
@@ -58,9 +60,12 @@ async function gettown() {
         townsection.appendChild(p2);
         townsection.appendChild(p3);
         townsection.appendChild(p4);
-        townsection.appendChild(img);
+        imgsection.appendChild(img);
+        smallgrid.appendChild(townsection);
+        smallgrid.appendChild(img);
+        
 
-        document.querySelector('section.towninfo').appendChild(townsection);
+        document.querySelector('section.towninfo').appendChild(smallgrid);
 
         let townsection2 = document.createElement('section');
         let h22 = document.createElement('h2');
@@ -70,6 +75,8 @@ async function gettown() {
         let p32 = document.createElement('p');
         let p42 = document.createElement('p');
         let img2 = document.createElement('img');
+        let imgsection2 = document.createElement('section');
+        let smallgrid2=document.createElement('section');
 
         h22.textContent = response.towns[4].name;
         h32.textContent = response['towns'][4]['motto'];
@@ -77,7 +84,7 @@ async function gettown() {
         p22.textContent = "Population: " + response['towns'][4]['currentPopulation'];
         p32.textContent = "Annual Rain Fall: " + response['towns'][4]['averageRainfall'];
         p42.textContent = "Current Events: " + response['towns'][4]["events"];
-        img2.setAttribute('src', response['towns'][4]['photo']);
+        img2.setAttribute('src', "images/"+response['towns'][4]['photo']);
         img2.setAttribute('alt', response['towns'][4]['name']);
 
         townsection2.appendChild(h22);
@@ -86,9 +93,11 @@ async function gettown() {
         townsection2.appendChild(p22);
         townsection2.appendChild(p32);
         townsection2.appendChild(p42);
-        townsection2.appendChild(img2);
+        imgsection2.appendChild(img2);
+        smallgrid2.appendChild(townsection2);
+        smallgrid2.appendChild(img2);
 
-        document.querySelector('section.towninfo').appendChild(townsection2);
+        document.querySelector('section.towninfo').appendChild(smallgrid2);
 
         
         let townsection3 = document.createElement('section');
@@ -99,6 +108,8 @@ async function gettown() {
         let p33 = document.createElement('p');
         let p43 = document.createElement('p');
         let img3 = document.createElement('img');
+        let imgsection3 = document.createElement('section');
+        let smallgrid3=document.createElement('section');
 
         h23.textContent = response.towns[5].name;
         h33.textContent = response['towns'][5]['motto'];
@@ -106,7 +117,7 @@ async function gettown() {
         p23.textContent = "Population: " + response['towns'][5]['currentPopulation'];
         p33.textContent = "Annual Rain Fall: " + response['towns'][5]['averageRainfall'];
         p43.textContent = "Current Events: " + response['towns'][5]["events"];
-        img3.setAttribute('src', response['towns'][5]['photo']);
+        img3.setAttribute('src', "images/"+response['towns'][5]['photo']);
         img3.setAttribute('alt', response['towns'][5]['name']);
 
         townsection3.appendChild(h23);
@@ -115,9 +126,11 @@ async function gettown() {
         townsection3.appendChild(p23);
         townsection3.appendChild(p33);
         townsection3.appendChild(p43);
-        townsection3.appendChild(img3);
+        imgsection3.appendChild(img3);
+        smallgrid3.appendChild(townsection3);
+        smallgrid3.appendChild(img3);
 
-        document.querySelector('section.towninfo').appendChild(townsection3);
+        document.querySelector('section.towninfo').appendChild(smallgrid3);
     }
 
 window.addEventListener('load', (event) => {
