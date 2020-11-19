@@ -29,13 +29,24 @@
                 let x=0
                 for (i=0;i<jsObject.list.length;i++){
                     if (jsObject.list[i].dt_txt.includes("18:00:00")){
+                        let y= new Date().getFullYear();
+                        let m= new Date().getMonth();
+                        m=m+1;
+                        let d= new Date().getDate();
+                        let date= y+"-"+m+"-"+d;
+                        console.log(jsObject.list[i].dt_txt.includes(date));
+                        if (jsObject.list[i].dt_txt.includes(date)){
+                            console.log("don't use me");
+                        }
+                        else{
                         document.querySelector('#high'+x).textContent=jsObject.list[i].main.temp_max;
                         document.querySelector('#low'+x).textContent=jsObject.list[i].main.temp_min;
                         document.querySelector('#img'+x).src="http://openweathermap.org/img/wn/"+jsObject.list[i].weather[0].icon +"@2x.png"
                         x=x+1;
+                        }
                     }
                 }
-                x=0;
+                x=1;
                 for (i=1;i<6;i++){
                 
                     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
