@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+    max-width: 600px;
+    font-family: sans-serif;
+}
+p {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+#fiveday {
+    display: grid;
+    grid-template-columns: 1fr 1fr 150px;
+    text-align: center;
+    align-items: center;
+    background-color: #e8b582;
+    border-radius: 0 0 25px 25px;
+    border-top:1px solid black; 
+
+}
+#fiveday img {
+    width: 40px;
+    justify-self: end;
+}
+
+#today{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-height: 1067px;
+}
+#background {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    border-radius: 25px 25px 0 0;
+    max-width: 600px;
+    max-height: 1067px;
+}
+#currently {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2.5em;
+}
+.hightemp, .hightemp1 {
+    margin-top: 10px;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 2em;
+}
