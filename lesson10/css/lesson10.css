@@ -157,6 +157,7 @@ h6 {
 }
 #fineprint {
     font-size: .6em;
+    display: none;
 }
 
 
@@ -171,6 +172,7 @@ h6 {
         grid-template-rows: 10px 1fr 1fr ;
         max-height: 562px;
     }
+    
 
 }
 @media only screen and (min-width: 785px){
@@ -223,7 +225,9 @@ h6 {
     #facebook, #twitter, #instagram, #youtube{
         display: grid;
     }
-    
+    #fineprint {
+        display: inline;
+    }
     }
 
     @media only screen and (min-width: 1000px){
@@ -240,5 +244,7 @@ h6 {
             grid-template-rows: 10px 1fr 1fr 1fr ;
             max-height: 562px;
         }
-
+        #fineprint {
+            display: inline;
+        }
     }

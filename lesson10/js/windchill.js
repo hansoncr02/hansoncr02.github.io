@@ -35,10 +35,10 @@
                         let d= new Date().getDate();
                         let date= y+"-"+m+"-"+d;
                         console.log(jsObject.list[i].dt_txt.includes(date));
-                        if (jsObject.list[i].dt_txt.includes(date)){
+                    if (jsObject.list[i].dt_txt.includes(date)){
                             console.log("don't use me");
                         }
-                        else{
+                    else{
                         document.querySelector('#high'+x).textContent=jsObject.list[i].main.temp_max;
                         document.querySelector('#low'+x).textContent=jsObject.list[i].main.temp_min;
                         document.querySelector('#img'+x).src="http://openweathermap.org/img/wn/"+jsObject.list[i].weather[0].icon +"@2x.png"
@@ -54,7 +54,7 @@
                     console.log(d);
                     let futureday=d+x
                     if (futureday>6){
-                        futureday=futureday-6;
+                        futureday=futureday-7;
                     }
                     document.querySelector("#day"+i).textContent=days[futureday];
                     x=x+1;
