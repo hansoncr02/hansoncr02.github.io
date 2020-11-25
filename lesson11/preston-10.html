@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston homepage</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lesson10.css">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap"> -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/lesson10.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body>
+    <section id="alert" class="">
+        <h6>Saturday = Preston pancakes in the park! <br>
+            9:00 a.m. Saturday at the city park.</h6>    
+    </section>
+    <header>
+        <img src="images/logo.png" alt="weather logo">
+        <div class="motto">
+            <h3>Weather Wonderers</h3>
+            <p>Where wondering minds <br> find answers</p>
+        </div>
+    </header>
+    <nav>
+        
+        <ul id="navigation" class="">
+            <li><a class="ham" href="#" onclick="togglemenu()"> &#9776; </a></li>
+            <li> <a href="https://hansoncr02.github.io/lesson9/index.html"> Home</a></li>
+            <li><a id="active" href="preston-5.html"> Preston</a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li><a href="https://hansoncr02.github.io/lesson8/lesson8.html"> Storm Center</a></li>
+            <li><a href="https://hansoncr02.github.io/lesson7/gallery-7.html"> Gallery</a></li>
+        </ul>
+    </nav>
+    <section id="mainsection">
+        <h1>Preston Idaho</h1>
+        <div id="summary">
+            <img id="hero" src="images/preston.jpg" alt="hero image">
+            <div>
+                <p>Weather Summary</p>
+                  <p>Currently: <span id='currently'></span></p>
+                <p>High: <span id='hightemp'>64</span> &#8457;</p>
+                <p id='windchill'></p> 
+                <p>Humidity: <span id='humidity'></span>%</p>
+                <p>Windspeed: <span id='wind'>12</span> mph</p>
+            </div>
+        </div>
+        <p id="five">Five Day Forecast</p>
+        <div id="fiveday"> 
+            <div>
+                <p><span id='day1'></span></p>
+                <img id='img0' src="" alt="day 1">
+                <p>High: <span id='high0'></span> &#8457;</p>
+                <p>Low: <span id='low0'></span> &#8457;</p>
+            </div>
+            <div>
+                <p><span id='day2'></span></p>
+                <img id='img1' src="" alt="day 2">
+                <p>High: <span id='high1'></span> &#8457;</p>
+                <p>Low: <span id='low1'></span> &#8457;</p>
+            </div><div>
+                <p><span id='day3'></span></p>
+                <img id='img2' src="" alt="day 3">
+                <p>High: <span id='high2'></span> &#8457;</p>
+                <p>Low: <span id='low2'></span> &#8457;</p>
+            </div><div>
+                <p><span id='day4'></span></p>
+                <img id='img3' src="" alt="day 4">
+                <p>High: <span id='high3'></span> &#8457;</p>
+                <p>Low: <span id='low3'></span> &#8457;</p>
+            </div><div>
+                <p><span id='day5'></span></p>
+                <img id='img4' src="" alt="day 5">
+                <p>High: <span id='high4'></span> &#8457;</p>
+                <p>Low: <span id='low4'></span> &#8457;</p>
+            </div>
+        </div>
+        <p id="fineprint">*Weather information obtained from <a href="https://openweathermap.org/">https://openweathermap.org/</a> </p>
+        <div id="article">
+            <img id="articlephoto" src="images/logo.png" alt="article picture">
+            <div>
+                <p><strong>Title</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eveniet in rerum maiores nam? Provident, itaque tenetur ullam dolor aliquid vero natus cum accusamus a, explicabo, cupiditate tempora delectus atque! ;lafkdhf k;ashf jdlk;ajf; lgjdsa;l kghjads;lkfjds dfja;ld gja;dlg hds;kalhgads; ;lfj sdfj;adslgh ad;lfjds lgjad;lfkghd;lg jad;lkgj ds;lfj ds;lgh;ad;fjdsa flkadsjg;lk adgjlk;dsF DHGADF G;JASDL;FJAD F;J</p>
+                <br class="clear">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div id="mapgrid">
+        <div id="rightside">
+            <h5 id="contact">Contact Information </h5>
+            <div id="footer">
+                <p>&#9993</p>
+                <p>han19037@byui.edu</p>
+                <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com/"><img id="youtube" src="images/youtube.png" alt="youtube"></a>
+                <p>&#128222</p>
+                <p>208-167-7788</p>
+                <a href="https://twitter.com/"><img id="twitter" src="images/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/"><img id="instagram" src="images/instagram.png" alt= "instagram"></a>
+            </div>
+        </div>  
+        <img id="map" src="images/prestonmap.png" alt="map of city">
+        </div>
+        <p class="legal">&copy;The Weather Site <span id="copyrightyear"></span> | Colton R. Hanson | Idaho | <a
+                href="https://www.byui.edu/online"> BYUI Online Learning </a> | <a href="https://openweathermap.org/">Weather information</a></p>
+        <p class="highlight"><strong> Last updated on <span id="lastupdated"></span> </strong></p>
+        <p class="today"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+  google: {
+    families: [
+       'Montserrat', 'Roboto Condensed'
+    ]
+  }
+});
+    </script>
+</body>
+</html>

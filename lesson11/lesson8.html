@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lesson8.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/navigation.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="weather logo">
+        <div class="motto">
+            <h3>Weather Wonderers</h3>
+            <p>Where wondering minds <br> find answers</p>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation" class="">
+            <li><a class="ham" href="#" onclick="togglemenu()"> &#9776; </a></li>
+            <li> <a href="https://hansoncr02.github.io/lesson9/index.html"> Home</a></li>
+            <li><a id="" href="https://hansoncr02.github.io/lesson7/preston-6.html"> Preston</a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li><a id='active' href="lesson8.html"> Storm Center</a></li>
+            <li><a id="" href="https://hansoncr02.github.io/lesson7/gallery-7.html"> Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <form action="thanks.html" method="get" id="stormCenter">
+        <h2>
+            Personal Information
+        </h2>
+       <label for=name>
+            <p>Enter Full Name:</p>
+            <input type="text" id="name" name="name" required pattern="[a-z A-Z]+" minlength="5" size="20">
+        </label>
+        <label for='email'>
+            <p>Email:</p>
+            <input type="email" id='email'  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com" maxlength="30" size="30" >
+        </label>
+        <label for='phone'>
+            <p>Phone Number(ex 111-111-1111):</p>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required size="13" maxlength="12">
+        </label>
+        <label for='Zip'>
+            <p>Zip Code:</p>
+            <input type="number" id='zip' name='zip' pattern="[0-9]{5}" required maxlength="5" size="7">
+        </label>
+        <h2>
+            Storm Information
+        </h2>
+        <label for='stormdate'>
+            <p>Date of Storm:</p>
+            <input type="date" id='stormdate' name="stormdate" >
+        </label>
+        <label for="stormtype">
+            <p>Type of Storm:</p>
+            <input list="stormchoice" id="stormtype" name="stormtype" />
+                <datalist id="stormchoice">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+        </label>
+        <label for="stormseverity">
+            <p>Severity of Storm: <span id='ratingvalue'>1</span></p>
+            <input type="range" id="stormseverity" name="stormseverity" min="1" max="10" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        </label><br>
+        <label for="stormregion">
+            <select id="stormregion" name="stormregion">
+                <option selected disabled value="default">Select Region...</option>
+                <option value="preston">Preston</option>
+                <option value="sodasprings">Soda Springs</option>
+                <option value="fishhaven">Fish Haven</option>
+            </select>
+        </label>
+        <label for="danger">
+            <p>Are you in danger:</p>
+                <div>
+                  <input type="radio" id="yes" name="danger" value="yes"
+                         checked>
+                  <label for="yes">Yes</label>
+                </div>
+                <div>
+                  <input type="radio" id="maybe" name="danger" value="maybe">
+                  <label for="maybe">Maybe</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="no" name="danger" value="no">
+                  <label for="no">No</label>
+                </div>
+        </label>
+    </form>
+        <div>
+            <label for="comment">
+                <p>Additional Information or Comments (Max 294 characters):</p>
+                <textarea id="comment" name="comment" rows="7" cols="42" maxlength="294"></textarea>
+            </label><br>
+            <button type="submit" form="stormCenter" name="submit" value="Submit">Post the storm</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="rightside">
+            <h5 id="contact">Contact Information </h5>
+            <div id="footer">
+                <p>&#9993;</p>
+                <p>han19037@byui.edu</p>
+                <a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.youtube.com/"><img id="youtube" src="images/youtube.png" alt="youtube"></a>
+                <p>&#128222</p>
+                <p>208-167-7788</p>
+                <a href="https://twitter.com/"><img id="twitter" src="images/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/"><img id="instagram" src="images/instagram.png" alt= "instagram"></a>
+            </div>
+        </div>  
+        <p class="legal">&copy;The Weather Site <span id="copyrightyear"></span> | Colton R. Hanson | Idaho | <a
+                href="https://www.byui.edu/online"> BYUI Online Learning </a></p>
+        <p class="highlight"><strong> Last updated on <span id="lastupdated"></span> </strong></p>
+        <p class="today"></p>
+    </footer>
+</body>
+</html>
