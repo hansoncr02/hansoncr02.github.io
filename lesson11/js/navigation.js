@@ -73,7 +73,6 @@ async function gettown() {
         p1.textContent = "Year Founded: " + response["towns"][i]["yearFounded"];
         p2.textContent = "Population: " + response['towns'][i]['currentPopulation'];
         p3.textContent = "Annual Rain Fall: " + response['towns'][i]['averageRainfall'];
-        p4.textContent = "Current Events: " + response['towns'][i]["events"];
         img.setAttribute('src', "images/" + response['towns'][i]['photo']);
         img.setAttribute('alt', response['towns'][i]['name']);
 
@@ -91,7 +90,6 @@ async function gettown() {
         p12.textContent = "Year Founded: " + response["towns"][i]["yearFounded"];
         p22.textContent = "Population: " + response['towns'][i]['currentPopulation'];
         p32.textContent = "Annual Rain Fall: " + response['towns'][i]['averageRainfall'];
-        p42.textContent = "Current Events: " + response['towns'][i]["events"];
         img2.setAttribute('src', "images/" + response['towns'][i]['photo']);
         img2.setAttribute('alt', response['towns'][i]['name']);
 
@@ -109,7 +107,6 @@ async function gettown() {
         p13.textContent = "Year Founded: " + response["towns"][i]["yearFounded"];
         p23.textContent = "Population: " + response['towns'][i]['currentPopulation'];
         p33.textContent = "Annual Rain Fall: " + response['towns'][i]['averageRainfall'];
-        p43.textContent = "Current Events: " + response['towns'][i]["events"];
         img3.setAttribute('src', "images/" + response['towns'][i]['photo']);
         img3.setAttribute('alt', response['towns'][i]['name']);
 
@@ -128,10 +125,10 @@ async function gettown() {
     smallgrid2.appendChild(img2);
     smallgrid3.appendChild(townsection3);
     smallgrid3.appendChild(img3);
-
-    document.querySelector('section.towninfo').appendChild(smallgrid);
-    document.querySelector('section.towninfo').appendChild(smallgrid2);
-    document.querySelector('section.towninfo').appendChild(smallgrid3);
+    
+    document.querySelector('div.div1').appendChild(smallgrid);
+    document.querySelector('div.div2').appendChild(smallgrid2);
+    document.querySelector('div.div3').appendChild(smallgrid3);
 }
 
 window.addEventListener('load', (event) => {

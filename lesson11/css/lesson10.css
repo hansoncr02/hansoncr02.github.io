@@ -234,9 +234,7 @@ h6 {
 
     @media only screen and (min-width: 1000px){
         /**stay in the brackets**/
-        #mainsection {
-            max-width: 1000px;
-        }
+        
         nav footer {
             max-width: 100%;
         }

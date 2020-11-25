@@ -1,0 +1,38 @@
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-width: 800PX;
+    margin: 0 auto;
+    
+}
+h1 {
+    margin: 0 auto;
+}
+.event-info{
+    padding-top: -2em;
+}
+span {
+    margin: 0 0 0 0;
+}
+.date {
+    justify-self: center;
+}
+.description {
+    grid-column: 2/3;
+    align-self: center;
+}
+.date h4 {
+    padding: 0px;
+    margin: 0;
+}
+.red{
+    background-color: #e88185;
+    padding: 10px;
+    border-radius: 10px;
+}
+.curr{
+    background-color: #d51920;
+    padding: 10px;
+    border-radius: 10px;   
+}
