@@ -30,9 +30,11 @@ span {
     background-color: #e88185;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 .curr{
     background-color: #d51920;
     padding: 10px;
-    border-radius: 10px;   
+    border-radius: 10px;  
+    box-shadow: 5px 5px 5px black; 
 }
