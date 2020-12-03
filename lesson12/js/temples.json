@@ -1,0 +1,87 @@
+[
+    {"name":{
+        "Boise":{
+            "address":"1211 S Cole Rd",
+            "city":"Boise",
+            "state":"Idaho",
+            "telephone":"208-322-4422",
+            "services":{
+                "cafeteria":"no cafeteria available",
+                "clothes":"not available",
+                "housing":"available for patrons",
+                "distribution":"distribution center nearby"
+            },
+            "covid":"Phase 2: Temple open for living ordinances only",
+            "image":"boise.jpg",
+            "email":"han19037@byui.edu",
+            "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
+                "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
+                "initiatories":"Tuesday-Saturday 6am-9pm every half hour",
+                "sealings":"Tuesday-Saturday 6am-9pm every every half hour"
+            },
+            "history":"",
+            "summary":""
+        },
+        "Billings":{
+            "address":"3100 Rim Point Dr",
+            "city":"Billings",
+            "state":"Montana",
+            "telephone":"406-655-0607",
+            "services":{
+                "cafeteria":"no cafeteria available",
+                "clothes":"not available",
+                "housing":"no patron housing",
+                "distribution":"distribution center nearby"
+            },
+            "covid":"Phase 2: Temple open for living ordinances only",
+            "image":"billings.jpg",
+            "email":"han19037@byui.edu",
+            "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
+                "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
+                "initiatories":"Tuesday-Saturday 6am-9pm every half hour",
+                "sealings":"Tuesday-Saturday 6am-9pm every every half hour"
+            }
+        },
+        "Bountiful":{
+            "address":"640 S Bountiful Blvd",
+            "city":"Bountiful",
+            "state":"Utah",
+            "telephone":"801-296-2100",
+            "services":{
+                "cafeteria":"no cafeteria available",
+                "clothes":"clothing rental available",
+                "housing":"no patron housing",
+                "distribution":"distribution center nearby"
+            },
+            "covid":"Phase 2: Temple open for living ordinances only",
+            "image":"bountiful.jpg",
+            "email":"han19037@byui.edu",
+            "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
+                "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
+                "initiatories":"Tuesday-Saturday 6am-9pm every half hour",
+                "sealings":"Tuesday-Saturday 6am-9pm every every half hour"
+            }
+        },
+        "Chicago":{
+            "address":"4151 W Lake Ave",
+            "city":"Glenview",
+            "state":"Illinois",
+            "telephone":"847-299-6500",
+            "services":{
+                "cafeteria":"no cafeteria available",
+                "clothes":"clothing rental available",
+                "housing":"no patron housing",
+                "distribution":"distribution center nearby"
+            },
+            "covid":"Phase 2: Temple open for living ordinances only",
+            "image":"chicago.jpg",
+            "email":"han19037@byui.edu",
+            "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
+                "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
+                "initiatories":"Tuesday-Saturday 6am-9pm every half hour",
+                "sealings":"Tuesday-Saturday 6am-9pm every every half hour"
+            }
+        }
+    }
+    }
+]
