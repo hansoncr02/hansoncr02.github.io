@@ -1,0 +1,132 @@
+body{
+    background-color:  #a9b2ac;
+    margin: 0 auto;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+#navigation {
+    list-style: none;
+    margin-top: 0px;
+}
+header, header p{
+    margin-bottom: 0px;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+#navigation li:first-child {
+    display: block !important;
+    text-align: center;
+    font-size: 1.25em;
+}
+#navigation li {
+    display: none;
+    text-align: center;
+}
+nav ul {
+    margin: 0;
+}
+ul li, ul a{
+    text-decoration: none;
+    color: black; 
+    padding: .8rem; 
+}
+#navigation ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,0.4);
+}
+
+.motto {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.motto p{
+    font-size: .75em;
+}
+.motto h3 {
+    font-size: .9em;
+}
+header img {
+    height: 4em;
+}
+nav ul {
+    align-items: center;
+    
+}
+#five, nav, footer, header {
+    background-color: #197bbd;
+}
+#footer{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    text-align: left;
+    
+}
+#contact {
+    text-align: left;
+}
+footer{
+    text-align: center;
+}
+.responsive li {
+    display: block !important;
+}
+nav ul li a:hover {
+    background-color: #bcd0c7;
+}
+.motto {
+    justify-content: left;
+}
+header img {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 785px){
+    /**stay in the brackets**/
+    #navigation li:first-child {
+        display: none !important;
+    }
+    #navigation li {
+        display: inline-flex;
+        padding: 1em;
+        text-align: right;
+    }
+    nav ul li a {
+        display: block;
+        border-top: none;
+    }
+    ul {
+        display: inline-flex;
+    }
+    .responsive li {
+        display: inline-flex !important;
+    }
+
+    }
+
+    @media only screen and (min-width: 1200px){
+        /**stay in the brackets**/
+    
+        nav footer {
+            max-width: 100%;
+        }
+    
+        }
