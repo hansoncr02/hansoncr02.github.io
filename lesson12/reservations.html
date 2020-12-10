@@ -29,7 +29,52 @@
         </ul>
     </nav>
     <body>
-        
+        <div class="cInfo">
+            <h2>Book Your Reservation Today!</h2>
+            <main>
+                <form action="contacted.html" method="get" id="contactForm">
+                <h2>
+                    Personal Information:
+                </h2>
+               <label for=name>
+                    <p>Enter Full Name:</p>
+                    <input type="text" id="name" name="name" required pattern="[a-z A-Z]+" minlength="5" size="20">
+                </label>
+                <label for='email'>
+                    <p>Email:</p>
+                    <input type="email" id='email'  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com" maxlength="30" size="30" >
+                </label>
+                <label for='phone'>
+                    <p>Phone Number(ex 111-111-1111):</p>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required size="13" maxlength="12">
+                </label>
+                <h2>
+                    Feedback Information:
+                </h2>
+                <label for='staydate'>
+                    <p>Date of Stay:</p>
+                    <input type="date" id='staydate' name="staydate" >
+                </label>
+                <label for="location">
+                    <p>Location You Stayed:</p>
+                    <input list="locations" id="loction" name="location" />
+                        <datalist id="locations">
+                            <option value="Boise">
+                            <option value="Billings">
+                            <option value="Bountiful">
+                            <option value="Chicago">
+                        </datalist>
+                </label>
+                <div>
+                    <label for="comment">
+                        <p>Feedback (Max 294 characters):</p>
+                        <textarea id="comment" name="comment" rows="7" cols="42" maxlength="294"></textarea>
+                    </label>
+                </form><br>
+                    <button class='submitcontact' type="submit" form="contactForm" name="submit" value="Submit">Send feedback</button>
+                </div>
+            </main>
+        </div>
     </body>
     <footer>
         
