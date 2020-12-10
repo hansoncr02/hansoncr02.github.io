@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn Services</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="js/templeinn.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Temple Inn Logo">
+        <div class="motto">
+            <h3>Temple Inn</h3>
+            <p>When you have to <br> leave the temple <br>come inn here! </p>
+        </div>
+    </header>
+    <nav>
+        
+        <ul id="navigation" class="">
+            <li><a class="ham" href="#" onclick="togglemenu()"> &#9776; </a></li>
+            <li> <a class=''  href="index.html"> Home</a></li>
+            <li><a class=''href="boise.html"> Boise</a></li>
+            <li><a class=''href='billings.html'> Billings</a></li>
+            <li><a class=''href="bountiful.html"> Bountiful</a></li>
+            <li><a class=''href="chicago.html"> Chicago</a></li>
+            <li><a class=''href="reservations.html"> Reservations</a></li>
+            <li><a class='active'href="services.html"> Services</a></li>
+            <li><a class="" href="contact.html"> Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="service">
+        <h3>Wedding Reception Amenities:</h3>
+        <div class='services'>
+            <img src="images/dance.jpg" alt="dance">
+            <li>Large dance floor (can be used for seating and dining as well).</li>
+            <li>DJ on duty. <br> *Playlist needs to be provided by bride and groom.*</li>
+            <img src="images/dj.jpg" alt="dj"><br class='hide'>
+            <img src="images/catering.jpg" alt="catering">
+            <li>Catering <br> *Available if reserved and based off of select menu.*</li>
+            <li>Decorating <br> *Available if reserved and based off of select color schemes.*</li>
+            <img src="images/decor.jpg" alt="decorations">
+        </div>
+        <main>
+            <form action="contacted.html" method="get" id="contactForm">
+            <h2>
+                Personal Information:
+            </h2>
+           <label for=name>
+                <p>Enter Full Name:</p>
+                <input type="text" id="name" name="name" required pattern="[a-z A-Z]+" minlength="5" size="20">
+            </label>
+            <label for='email'>
+                <p>Email:</p>
+                <input type="email" id='email'  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com" maxlength="30" size="30" >
+            </label>
+            <label for='phone'>
+                <p>Phone Number(ex 111-111-1111):</p>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required size="13" maxlength="12">
+            </label>
+            <h2>
+                For More Information:
+            </h2>
+            <label for='staydate'>
+                <p>Date of Stay:</p>
+                <input type="date" id='staydate' name="staydate" >
+            </label>
+            <label for="location">
+                <p>Location You will stay at:</p>
+                <input list="locations" id="loction" name="location" />
+                    <datalist id="locations">
+                        <option value="Boise">
+                        <option value="Billings">
+                        <option value="Bountiful">
+                        <option value="Chicago">
+                    </datalist>
+            </label>
+            <div>
+                <label for="comment">
+                    <p>Feedback (Max 294 characters):</p>
+                    <textarea id="comment" name="comment" rows="7" cols="42" maxlength="294"></textarea>
+                </label>
+            </form><br>
+                <button class='submitcontact' type="submit" form="contactForm" name="submit" value="Submit">Send feedback</button>
+            </div>
+        </main>
+        
+    </div>
+    
+    <footer>
+        
+        <div id="footer">
+            <h5 id="contact">Contact Information </h5>
+            <p>✉ han19037@byui.edu</p>
+            <p>📞 208-167-7788</p>
+        </div>  
+        <p class="legal">&copy;Temple Inn <span id="copyrightyear"></span> | Colton R. Hanson | Idaho | <a
+                href="https://www.byui.edu/online"> BYUI Online Learning </a></p>
+        <p class="highlight"><strong> Last updated on <span id="lastupdated"></span> </strong></p>
+        <p class="today"></p>
+    </footer>
+</body>
+</html>

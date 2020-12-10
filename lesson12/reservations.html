@@ -32,7 +32,7 @@
         <div class="cInfo">
             <h2>Book Your Reservation Today!</h2>
             <main>
-                <form action="contacted.html" method="get" id="contactForm">
+                <form action="reserved.html" method="get" id="reservationForm">
                 <h2>
                     Personal Information:
                 </h2>
@@ -48,15 +48,23 @@
                     <p>Phone Number(ex 111-111-1111):</p>
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required size="13" maxlength="12">
                 </label>
+                <label for='home'>
+                    <p>Resident State or Country:</p>
+                    <input type="text" id="home" name="home" maxlength="30" size="20">
+                </label>
                 <h2>
-                    Feedback Information:
+                    Reservation Information:
                 </h2>
-                <label for='staydate'>
-                    <p>Date of Stay:</p>
-                    <input type="date" id='staydate' name="staydate" >
+                <label for='checkin'>
+                    <p>Date of Check-in:</p>
+                    <input type="date" id='checkin' name="checkin" >
+                </label>
+                <label for='checkout'>
+                    <p>Date of Check-out:</p>
+                    <input type="date" id='checkout' name="checkout" >
                 </label>
                 <label for="location">
-                    <p>Location You Stayed:</p>
+                    <p>Location:</p>
                     <input list="locations" id="loction" name="location" />
                         <datalist id="locations">
                             <option value="Boise">
@@ -65,13 +73,27 @@
                             <option value="Chicago">
                         </datalist>
                 </label>
+                <label for="type">
+                    <p>Roome Type:</p>
+                    <input list="roomType" id="type" name="type" />
+                        <datalist id="roomType">
+                            <option value="1 King Bed">
+                            <option value="2 King Beds">
+                            <option value="Honeymoon Suite">
+                            <option value="Presidential Suite">
+                        </datalist>
+                </label>
+                <label for='roomnumber'>
+                    <p>Number of rooms needed:</p>
+                    <input type="number" id="roomnumber" name="roomnumber" pattern="[0-9]" required size="1" maxlength="3">
+                </label>
                 <div>
                     <label for="comment">
-                        <p>Feedback (Max 294 characters):</p>
+                        <p>Special Accomodations needed (Max 294 characters):</p>
                         <textarea id="comment" name="comment" rows="7" cols="42" maxlength="294"></textarea>
                     </label>
                 </form><br>
-                    <button class='submitcontact' type="submit" form="contactForm" name="submit" value="Submit">Send feedback</button>
+                    <button class='submitcontact' type="submit" form="reservationForm" name="submit" value="Submit">Send feedback</button>
                 </div>
             </main>
         </div>

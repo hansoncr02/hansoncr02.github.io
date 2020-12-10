@@ -2,7 +2,7 @@ body{
     background-color:  #a9b2ac;
     margin: 0 auto;
 }
-p, a{
+p, a, li{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -150,7 +150,7 @@ header img {
     text-align: center;
 }
 .cInfo {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .submitContact{
@@ -163,6 +163,43 @@ header img {
 #footerMap .footinfo, #footerMap #contact {
     text-align: left;
 }
+.service, .services{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.services img {
+    max-width: 200px;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+.services li {
+    align-self: center;
+    list-style: none;
+}
+.service li {
+    list-style: none;
+    margin-top: 20px;
+}
+.service h3 {
+    text-align: left;
+}
+.left {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 10px;
+}
+.left li {
+    margin-top: 10px;
+}
+
+
+
+
+
+
 @media only screen and (min-width: 785px){
     /**stay in the brackets**/
     #navigation li:first-child {
@@ -198,7 +235,16 @@ header img {
     .goal {
         grid-template-columns: 1fr 1fr;
     }
-
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .services img {
+        max-width: 350px;
+    }
+    .hide {
+        display: none;
+    }
     }
 
     @media only screen and (min-width: 1200px){
