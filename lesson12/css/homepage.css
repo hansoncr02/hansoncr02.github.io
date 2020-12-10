@@ -2,11 +2,11 @@ body{
     background-color:  #a9b2ac;
     margin: 0 auto;
 }
-p{
+p, a{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed', sans-serif;
 } 
 #navigation {
@@ -68,13 +68,13 @@ nav ul {
     background-color: #197bbd;
 }
 #footer{
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    text-align: left;
+    
+    text-align: center;
     
 }
 #contact {
-    text-align: left;
+    text-align: center;
+    font-weight: 900;
 }
 footer{
     text-align: center;
@@ -92,10 +92,56 @@ header img {
     margin: 10px;
     padding-left: 20px;
 }
-
-
-
-
+.largeView, .mediumView{
+    display: none;
+}
+.imageTop{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    grid-gap: 10px;
+    padding-top: 20px;
+}
+.imageTop img {
+    max-width: 400px;
+    align-self: center;
+    justify-self: center;
+}
+.active {
+    background-color: #bcd0c7;
+}
+.book {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 75%;
+    background-color: #197bbd;
+    border-radius: 100px;
+}
+.book h1 a:link, .book h1 a:visited,.book h1 a:active {
+    text-decoration: none;
+    color: black;
+}
+.book:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #bcd0c7;
+}
+.introTemple {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.butler {
+    max-width: 300px;
+    justify-self: center;
+}
+.goal {
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 
 
@@ -106,7 +152,7 @@ header img {
     }
     #navigation li {
         display: inline-flex;
-        padding: 1em;
+        padding: .1em;
         text-align: right;
     }
     nav ul li a {
@@ -119,6 +165,21 @@ header img {
     .responsive li {
         display: inline-flex !important;
     }
+    .mediumView {
+        display: inline;
+    }
+    .imageTop{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        max-width: 1000px;
+        grid-gap: 30px;
+    }
+    .imageTop img {
+        max-width: 350px;
+    }
+    .goal {
+        grid-template-columns: 1fr 1fr;
+    }
 
     }
 
@@ -128,5 +189,19 @@ header img {
         nav footer {
             max-width: 100%;
         }
-    
+        #navigation li {
+            padding: 1em;
+        }
+        .largeView {
+            display: inline!important;
+        }
+        .imageTop{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1000px;
+            grid-gap: 30px;
+        }
+        .imageTop img {
+            max-width: 250px;
+        }
         }
