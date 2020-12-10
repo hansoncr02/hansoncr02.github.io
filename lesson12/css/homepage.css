@@ -142,9 +142,27 @@ header img {
     display: grid;
     grid-template-columns: 1fr;
 }
-
-
-
+.nativity {
+    max-width: 100%;
+    justify-self: center;
+}
+.news {
+    text-align: center;
+}
+.cInfo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.submitContact{
+    margin-top: 20px;
+}
+#footerMap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#footerMap .footinfo, #footerMap #contact {
+    text-align: left;
+}
 @media only screen and (min-width: 785px){
     /**stay in the brackets**/
     #navigation li:first-child {
