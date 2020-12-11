@@ -2,6 +2,10 @@ body{
     background-color:  #a9b2ac;
     margin: 0 auto;
 }
+main {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 p, a, li{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -68,9 +72,11 @@ nav ul {
     background-color: #197bbd;
 }
 #footer{
-    
     text-align: center;
-    
+}
+footer {
+    margin-bottom: 0;
+    padding-bottom: 5px;
 }
 #contact {
     text-align: center;
@@ -142,6 +148,10 @@ header img {
     display: grid;
     grid-template-columns: 1fr;
 }
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .nativity {
     max-width: 100%;
     justify-self: center;
@@ -190,12 +200,30 @@ header img {
     margin: 0 auto;
     list-style: none;
     margin-top: 10px;
+    padding-left: 20px;
+}
+.service h3, .cInfo h2 {
+    padding-left: 20px;
 }
 .left li {
     margin-top: 10px;
 }
-
-
+body h1 {
+    text-align: center;
+}
+.section1, .section2 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#templepic {
+    max-width: 100%;
+}
+.ordschedule {
+    background-color: #bcd0c7;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-right: 10px;
+}
 
 
 
@@ -248,7 +276,17 @@ header img {
     #footerMap {
         grid-template-columns: 1fr 1fr;
     }
+    .section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+    .section2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    }
+
 
     @media only screen and (min-width: 1200px){
         /**stay in the brackets**/

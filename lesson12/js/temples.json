@@ -7,12 +7,12 @@
             "telephone":"208-322-4422",
             "services":{
                 "cafeteria":"no cafeteria available",
-                "clothes":"not available",
-                "housing":"available for patrons",
-                "distribution":"distribution center nearby"
+                "clothes":"no clothing rental available",
+                "housing":"housing for patrons",
+                "distribution":"a distribution center nearby"
             },
             "covid":"Phase 2: Temple open for living ordinances only",
-            "image":"boise.jpg",
+            "image":"boise.jpeg",
             "email":"han19037@byui.edu",
             "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
                 "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
@@ -29,12 +29,12 @@
             "telephone":"406-655-0607",
             "services":{
                 "cafeteria":"no cafeteria available",
-                "clothes":"not available",
+                "clothes":"no clothing rental available",
                 "housing":"no patron housing",
-                "distribution":"distribution center nearby"
+                "distribution":"a distribution center nearby"
             },
             "covid":"Phase 2: Temple open for living ordinances only",
-            "image":"billings.jpg",
+            "image":"billings.jpeg",
             "email":"han19037@byui.edu",
             "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
                 "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
@@ -51,10 +51,10 @@
                 "cafeteria":"no cafeteria available",
                 "clothes":"clothing rental available",
                 "housing":"no patron housing",
-                "distribution":"distribution center nearby"
+                "distribution":"a distribution center nearby"
             },
             "covid":"Phase 2: Temple open for living ordinances only",
-            "image":"bountiful.jpg",
+            "image":"bountiful.jpeg",
             "email":"han19037@byui.edu",
             "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
                 "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
@@ -71,10 +71,10 @@
                 "cafeteria":"no cafeteria available",
                 "clothes":"clothing rental available",
                 "housing":"no patron housing",
-                "distribution":"distribution center nearby"
+                "distribution":"a distribution center nearby"
             },
             "covid":"Phase 2: Temple open for living ordinances only",
-            "image":"chicago.jpg",
+            "image":"chicago.jpeg",
             "email":"han19037@byui.edu",
             "ordinance":{"baptism":"Tuesday-Saturday 6am-9pm every half hour",
                 "endowment":"Tuesday-Saturday 6am-9pm every hour and a half",
@@ -84,4 +84,4 @@
         }
     }
     }
-]
+] 
