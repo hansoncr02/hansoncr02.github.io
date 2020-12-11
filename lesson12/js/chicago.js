@@ -40,7 +40,6 @@ let phase, baptism, initiatory, endowment, sealing, cafeteria, clothes, housing,
             document.querySelector('#phone').innerHTML=phone;
             email=jsObject[0].name.Chicago.email;
             document.querySelector('#email').innerHTML=email;
-            document.querySelector('#templepic').setAttribute('src', "images/"+jsObject[0].name.Chicago.image);
     });
     
 });

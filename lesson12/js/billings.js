@@ -40,7 +40,6 @@ window.addEventListener('load', (event)=>{
                 document.querySelector('#phone').innerHTML=phone;
                 email=jsObject[0].name.Billings.email;
                 document.querySelector('#email').innerHTML=email;
-                document.querySelector('#templepic').setAttribute('src', "images/"+jsObject[0].name.Billings.image);
         });
         
 });
